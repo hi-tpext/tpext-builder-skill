@@ -186,6 +186,7 @@ class Yourlog extends Controller
 
 | 属性 | 默认值 | 说明 |
 |---|---|---|
+| `dataScope` | `[]` | 限制 index/edit/autopost/view/delete/selectPage 的数据范围 |
 | `sortOrder` | `'id desc'` | 排序 |
 | `pagesize` | `14` | 每页条数 |
 | `useSearch` | `true` | 是否显示搜索 |
@@ -210,7 +211,7 @@ class Yourlog extends Controller
 | `selectWith` | `[]` | 关联预加载 |
 | `selectOrder` | `''` | 空时取 sortOrder |
 | `selectPagesize` | `20` | 每页条数 |
-| `selectScope` | `[]` | 固定 where 条件 |
+| `selectScope` | `[]` | 固定 select where 条件 |
 
 ### 左树（HasLeftTree trait 自动启用）
 
